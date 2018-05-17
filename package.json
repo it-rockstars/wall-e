@@ -4,13 +4,15 @@
   "main": "src/app.js",
   "private": true,
   "scripts": {
-    "test": "eslint .",
-    "start": "tabris serve"
+    "test_old": "eslint .",
+    "start": "tabris serve",
+    "test": "run-when-changed --watch '**/*.js' --exec 'adb shell input keyevent 4;sleep .8;adb shell input tap 554 976'"
   },
   "dependencies": {
     "tabris": "^2.4.2"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^4.19.1",
+    "run-when-changed": "^2.1.0"
   }
 }

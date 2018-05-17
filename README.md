@@ -17,3 +17,32 @@ The JavaScript app code can be [side-loaded](https://tabrisjs.com/documentation/
 The app can be built using the online build service at [tabrisjs.com](https://tabrisjs.com) or locally using [Tabris.js CLI](https://www.npmjs.com/package/tabris-cli).
 
 See [Building a Tabris.js App](https://tabrisjs.com/documentation/2.0/build.html) for more information.
+
+
+## Test
+
+Run Emulator
+
+```
+$ANDROID_HOME/tools/emulator -netdelay none -netspeed full -avd Nexus_5X_API_23
+```
+
+Download Tabris APK
+
+```
+https://apps.evozi.com/apk-downloader/?id=com.eclipsesource.tabrisjs2
+```
+
+Install Tabris APK
+
+```
+adb install com.eclipsesource.tabrisjs2.apk
+```
+
+Run npm test for having auto reload functionality within the Tabris App
+
+```
+npm test
+```
+
+
