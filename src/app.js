@@ -1,15 +1,28 @@
-const {Button, TextView, ui} = require('tabris');
+const {Action, NavigationView, ui} = require('tabris');
+const WallePageSelector = require('./WallePageSelector');
+const AboutPage = require('./AboutPage');
 
-let button = new Button({
-  centerX: 0, top: 100,
-  text: 'wow'
+const ABOUT_ACTION_TITLE = 'About';
+
+let navigationView = new NavigationView({
+    left: 0, top: 0, right: 0, bottom: 0,
+    drawerActionVisible: true
 }).appendTo(ui.contentView);
 
-let textView = new TextView({
-  centerX: 0, top: [button, 50],
-  font: '24px'
-}).appendTo(ui.contentView);
+ui.drawer.enabled = true;
+ui.drawer.append(
+    new WallePageSelector({
+        left: 0, top: 16, right: 0, bottom: 0
+    })
+);
 
-button.on('select', () => {
-  textView.text = 'Hallo oder was anderes!';
-});
+new Action({
+    id: 'aboutAction',
+    title: ABOUT_ACTION_TITLE,
+    placementPriority: 'high',
+    image:  {
+        src: device.platform === 'iOS' ? 'images/about-black-24dp@3x.png' : 'images/about-white-24dp@3x.png',
+        scale: 3
+    }
+}).on('select', () => new AboutPage().appendTo(navigationView))
+.appendTo(navigationView);

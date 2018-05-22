@@ -46,3 +46,12 @@ npm test
 ```
 
 
+For debugging in Chrome Browser open URL:
+
+```
+chrome://inspect/#devices
+```
+
+
+
+
