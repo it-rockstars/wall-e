@@ -1,65 +1,104 @@
 [
   {
-    "title": "1984",
-    "author": "H.G. Wells",
-    "image": "images/book_1984.jpg",
-    "popular": false,
-    "favorite": false
+    "symbol": "DANI",
+    "title": "Dani Coin",
+    "image": "./images/dani.png",
+    "amount": "50"
   },
   {
-    "title": "Na Tropie Nieznanych",
-    "author": "Bernard Heuvelmans",
-    "image": "images/book_na_tropie.jpg",
-    "popular": false,
-    "favorite": true
+    "symbol": "STEFAN",
+    "title": "Stefan Coin",
+    "image": "images/stefan.png",
+    "amount": "200"
   },
   {
-    "title": "Stary Czlowiek I Morze",
-    "author": "Ernest Hemingway",
-    "image": "images/book_stary.jpg",
-    "popular": true,
-    "favorite": true
+    "symbol": "RAINER",
+    "title": "Rainer Coin",
+    "image": "images/rainer.png",
+    "amount": "5000"
   },
   {
-    "title": "The Catcher In The Rye",
-    "author": "J.D. Salinger",
-    "image": "images/book_catcher.jpg",
-    "popular": true,
-    "favorite": true
+    "symbol": "HOLGER",
+    "title": "Holger Coin",
+    "image": "images/holger.png",
+    "amount": "20"
   },
   {
-    "title": "Moby Dick",
-    "author": "Herman Melville",
-    "image": "images/book_moby_dick.jpg",
-    "popular": false,
-    "favorite": true
+    "symbol": "ITR",
+    "title": "IT-Rockstars Coin",
+    "image": "images/itr.png",
+    "amount": "600"
   },
   {
-    "title": "Hobbit",
-    "author": "J.R.R Tolkien",
-    "image": "images/book_hobbit.jpg",
-    "popular": true,
-    "favorite": false
+    "symbol": "SCHWA",
+    "title": "Schwabing Coin",
+    "image": "images/schwabing.png",
+    "amount": "50"
   },
   {
-    "title": "Wojna Swiatow",
-    "author": "H.G. Wells",
-    "image": "images/book_wojna.jpg",
-    "popular": true,
-    "favorite": true
+    "symbol": "MUC",
+    "title": "München Coin",
+    "image": "images/munich.png",
+    "amount": "50"
   },
   {
-    "title": "Zegar Pomaranczowy Pracz",
-    "author": "Anthony Burgess",
-    "image": "images/book_zegar.jpg",
-    "popular": true,
-    "favorite": true
+    "symbol": "CHG",
+    "title": "Chiemgau Coin",
+    "image": "images/chiemgau.png",
+    "amount": "50"
   },
   {
-    "title": "Ksiega Dzungli",
-    "author": "Rudyard Kipling",
-    "image": "images/book_ksiega.jpg",
-    "popular": true,
-    "favorite": true
+    "symbol": "MAK",
+    "title": "Rawertz Coin",
+    "image": "images/rawertz.png",
+    "amount": "50"
+  },
+  {
+    "symbol": "MAX",
+    "title": "Maximilian Strasse Coin",
+    "image": "images/maximilian.png",
+    "amount": "50"
+  },
+  {
+    "symbol": "SAT235LC20",
+    "title": "Saturn Plasma TV Samsung 235LC20 Coin",
+    "image": "images/plasma.png",
+    "amount": "1"
+  },
+  {
+    "symbol": "SAT",
+    "title": "Saturn Coin",
+    "image": "images/saturn.png",
+    "amount": "1"
+  },
+  {
+    "symbol": "CLIN",
+    "title": "Clindoc Coin",
+    "image": "images/ids.png",
+    "amount": "3000"
+  },
+  {
+    "symbol": "MEM",
+    "title": "Music Memory Coin",
+    "image": "images/memory.png",
+    "amount": "20000"
+  },
+  {
+    "symbol": "ELC",
+    "title": "El Cortes Coin",
+    "image": "images/elcortes.png",
+    "amount": "8"
+  },
+  {
+    "symbol": "MM",
+    "title": "Media Markt Coin",
+    "image": "images/mediamarkt.png",
+    "amount": "4"
+  },
+  {
+  "symbol": "KEBAB",
+  "title": "Kebab Coin",
+  "image": "images/kebab.png",
+  "amount": "50"
   }
 ]

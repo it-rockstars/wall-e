@@ -32,8 +32,8 @@ module.exports = class CoinList extends CollectionView {
     updateCell(view, index) {
         console.log("updating cell");
         super.updateCell(view, index);
-        let {image, title, author} = coins[index];
-        Object.assign(view, {image, title, author});
+        let {image, title, symbol, amount   } = coins[index];
+        Object.assign(view, {image, symbol, title, amount});
     }
 
     _showCoinDetailsPage(Coin) {
@@ -60,42 +60,54 @@ class CoinCell extends Composite {
         return this.find('#image').first().image;
     }
 
+    set symbol(symbol) {
+        this.find('#symbol').first().text = symbol;
+    }
+
+    get symbol() {
+        return this.find('#symbol').first().text;
+    }
+
     set title(title) {
-        this.find('#titleLabel').first().text = title;
+        this.find('#title').first().text = title;
     }
 
     get title() {
-        return this.find('#titleLabel').first().text;
+        return this.find('#title').first().text;
     }
 
-    set author(author) {
-        this.find('#authorLabel').first().text = author;
+    set amount(amount) {
+        this.find('#amount').first().text = amount;
     }
 
-    get author() {
-        return this.find('#authorLabel').first().text;
+    get amount() {
+        return this.find('#amount').first().text;
     }
+
 
     _createUI() {
         this.append(
             new ImageView({id: 'image'}),
-            new TextView({id: 'titleLabel', markupEnabled: true}),
-            new TextView({id: 'authorLabel'})
+            new TextView({id: 'symbol'}),
+            new TextView({id: 'title', markupEnabled: true}),
+            new TextView({id: 'amount', alignment: 'right'})
         );
     }
 
     _applyLayout() {
         this.apply({
             '#image': {left: 16, centerY: 0, width: 32, height: 48, scaleMode: 'fit'},
-            '#titleLabel': {left: 64, right: 16, top: 16},
-            '#authorLabel': {left: 64, right: 16, top: 'prev() 4'}
+            '#symbol': {left: 64, right: 16, top: 16},
+            '#title': {left: 64, right: 16, top: 32},
+            '#amount': {left: 64, right: 16, top: 16, height: 32}
         });
     }
 
     _applyStyles() {
         this.apply({
-            '#titleLabel': {textColor: '#4a4a4a'},
-            '#authorLabel': {textColor: '#7b7b7b'}
+            '#title': {textColor: '#4a4a4a'},
+            '#symbol': {textColor: '#4a4a4a'},
+            '#amount': {textColor: '#7b7b7b', font: device.platform === 'iOS' ? '24px .HelveticaNeueInterface-Regular' : 'medium 20px'}
         });
     }
 

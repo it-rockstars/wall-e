@@ -30,7 +30,7 @@ $ANDROID_HOME/tools/emulator -netdelay none -netspeed full -avd Nexus_5X_API_23
 Download Tabris APK
 
 ```
-https://apps.evozi.com/apk-downloader/?id=com.eclipsesource.tabrisjs2
+https://play.google.com/store/apps/details?id=com.ext.ui&hl=en
 ```
 
 Install Tabris APK

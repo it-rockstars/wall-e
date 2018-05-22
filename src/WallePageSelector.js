@@ -2,11 +2,11 @@ const {Composite, ImageView, TextView, ui} = require('tabris');
 const WallePage = require('./WallePage');
 
 const PAGE_DATA = [{
-    title: 'Wallet',
-    drawerIcon: 'images/page_coins.png'
+    title: 'My Coins',
+    drawerIcon: 'images/wallet.png'
 }, {
-    title: 'Issue Coin',
-    drawerIcon: 'images/page_issue_coin.png',
+    title: 'Create Coin',
+    drawerIcon: 'images/createcoin.png',
 }];
 
 module.exports = class WallePageSelector extends Composite {

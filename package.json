@@ -6,7 +6,7 @@
   "scripts": {
     "test_old": "eslint .",
     "start": "tabris serve",
-    "test": "run-when-changed --watch '**/*.js' --exec 'adb shell input keyevent 4;sleep .8;adb shell input tap 554 976'"
+    "test": "run-when-changed --watch '**/*.js' --exec 'adb shell input keyevent 4;sleep 1;adb shell input tap 554 976'"
   },
   "dependencies": {
     "tabris": "^2.4.2"

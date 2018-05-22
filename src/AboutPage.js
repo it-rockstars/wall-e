@@ -2,11 +2,15 @@ const {Page, TextView, ui} = require('tabris');
 
 const TITLE = 'About';
 const LICENSE_TEXT = 'wall-e';
-const COVERS_LINK_TEXT = 'IT-Rockstars Services Ltd.';
 const ATTRIBUTION_TEXT =
-    `<i>Authors of wall-e:</i><br/>
+    `<br/>wallet app.<br/> create your own money. <br/>be consumer. <br/>be producer. <br/>be bank. <br/>be broker. <br/>be issuer<br/>
+<br/>
+  <br/>
   Rainer Häring - 1978<br/>
-  Stefan Kostopoulos - 1978<br/>`;
+  Stefan Kostopoulos - 1978<br/>
+  <br/>
+  IT-Rockstars Services<br/>
+  Munich / Valencia<br/>`;
 
 module.exports = class AboutPage extends Page {
 
